@@ -3,4 +3,14 @@
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/config/OpenAPIConfig.java
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/config/PersistenceConfig.java
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/config/WebConfig.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/enums/JobStatus.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/enums/MediaType.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/enums/Platform.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/enums/PostStatus.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/model/PlatformPost.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/model/PostJob.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/model/Publication.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/model/SocialAccount.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/model/Suggestion.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/model/User.java
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/web/HealthController.java
