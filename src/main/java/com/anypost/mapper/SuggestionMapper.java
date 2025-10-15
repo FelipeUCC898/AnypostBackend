@@ -9,26 +9,25 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 
+import java.time.Instant;
+
 @Mapper(componentModel = "spring")
 public interface SuggestionMapper {
 
-    // Entity -> DTO
-    @Mapping(target = "userId", source = "user.id")
-    SuggestionResponse toResponse(Suggestion entity);
-
-    // Create DTO + User -> Entity
     @Mapping(target = "id", ignore = true)
+    @Mapping(target = "prompt", source = "req.prompt")
+    @Mapping(target = "resultMediaUrl", ignore = true)
+    @Mapping(target = "resultType", ignore = true)
     @Mapping(target = "user", source = "user")
-    @Mapping(target = "resultMediaUrl", ignore = true)  // aún no generado por IA/n8n
-    @Mapping(target = "resultType", ignore = true)      // se define cuando llegue el asset
-    @Mapping(target = "createdAt", ignore = true)       // auditoría JPA
-    @Mapping(target = "updatedAt", ignore = true)       // auditoría JPA
+    @Mapping(target = "createdAt", ignore = true)
     Suggestion fromCreate(CreateSuggestionRequest req, User user);
 
+    SuggestionResponse toResponse(Suggestion suggestion);
+
     @AfterMapping
-    default void normalize(@MappingTarget Suggestion entity) {
-        if (entity.getPrompt() != null) {
-            entity.setPrompt(entity.getPrompt().trim());
+    default void setAudit(@MappingTarget Suggestion suggestion) {
+        if (suggestion.getCreatedAt() == null) {
+            suggestion.setCreatedAt(Instant.now());
         }
     }
 }
