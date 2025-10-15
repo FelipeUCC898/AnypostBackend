@@ -1,5 +1,7 @@
 com/anypost/domain/model/SocialAccount.class
+com/anypost/domain/repo/PublicationRepository.class
 com/anypost/domain/enums/MediaType.class
+com/anypost/domain/repo/SuggestionRepository.class
 com/anypost/config/AppProperties$N8n.class
 com/anypost/domain/model/PostJob.class
 com/anypost/config/AppProperties.class
@@ -11,12 +13,16 @@ com/anypost/AnyPostApplication.class
 com/anypost/config/PersistenceConfig.class
 com/anypost/config/AppProperties$Firebase.class
 com/anypost/domain/enums/JobStatus.class
+com/anypost/domain/repo/UserRepository.class
 com/anypost/config/WebConfig.class
 com/anypost/domain/model/User.class
+com/anypost/domain/repo/PlatformPostRepository.class
 com/anypost/config/AppProperties$Security.class
 com/anypost/config/OpenAPIConfig.class
 com/anypost/config/AppProperties$Storage.class
 com/anypost/domain/model/Publication.class
+com/anypost/domain/repo/SocialAccountRepository.class
 com/anypost/domain/enums/Platform.class
 com/anypost/domain/model/Suggestion.class
+com/anypost/domain/repo/PostJobRepository.class
 com/anypost/config/WebConfig$1.class
