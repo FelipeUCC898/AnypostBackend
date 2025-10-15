@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:anypost}
+    username: ${DB_USER:anypost}
+    password: ${DB_PASSWORD:anypost}
+  jpa:
+    hibernate:
+      ddl-auto: validate      # en prod usamos Flyway
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: ${PORT:8080}

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: anypost-backend
+# Perfil por defecto: dev
+spring.profiles.active: dev
+
+server:
+  port: 8080
