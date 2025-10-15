@@ -21,6 +21,8 @@ com/anypost/config/AppProperties$Firebase.class
 com/anypost/domain/enums/JobStatus.class
 com/anypost/domain/repo/UserRepository.class
 com/anypost/config/WebConfig.class
+com/anypost/mapper/PublicationMapperImpl.class
+com/anypost/mapper/PublicationMapper.class
 com/anypost/domain/model/User.class
 com/anypost/domain/repo/PlatformPostRepository.class
 com/anypost/config/AppProperties$Security.class
@@ -28,8 +30,10 @@ com/anypost/config/OpenAPIConfig.class
 com/anypost/config/AppProperties$Storage.class
 com/anypost/domain/model/Publication.class
 com/anypost/dto/suggestion/SuggestionResponse.class
+com/anypost/mapper/SuggestionMapper.class
 com/anypost/domain/repo/SocialAccountRepository.class
 com/anypost/domain/enums/Platform.class
 com/anypost/domain/model/Suggestion.class
 com/anypost/domain/repo/PostJobRepository.class
+com/anypost/mapper/SuggestionMapperImpl.class
 com/anypost/config/WebConfig$1.class
