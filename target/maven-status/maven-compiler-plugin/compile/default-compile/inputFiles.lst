@@ -19,4 +19,11 @@
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/repo/SocialAccountRepository.java
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/repo/SuggestionRepository.java
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/domain/repo/UserRepository.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/dto/publication/CreatePublicationRequest.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/dto/publication/PublicationResponse.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/dto/publication/SubmitPublicationRequest.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/dto/social/SocialAccountResponse.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/dto/social/TogglePlatformRequest.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/dto/suggestion/CreateSuggestionRequest.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/dto/suggestion/SuggestionResponse.java
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/web/HealthController.java
