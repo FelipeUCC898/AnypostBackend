@@ -1,1 +1,12 @@
+com/anypost/config/PersistenceConfig.class
+com/anypost/config/AppProperties$Firebase.class
+com/anypost/config/WebConfig.class
+com/anypost/config/AppProperties$Security.class
+com/anypost/config/OpenAPIConfig.class
+com/anypost/config/AppProperties$Storage.class
+com/anypost/config/AppProperties$N8n.class
+com/anypost/config/AppProperties.class
+com/anypost/config/AppProperties$Cors.class
+com/anypost/web/HealthController.class
+com/anypost/config/WebConfig$1.class
 com/anypost/AnyPostApplication.class

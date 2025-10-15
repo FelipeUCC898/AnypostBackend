@@ -1,1 +1,6 @@
 /Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/AnyPostApplication.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/config/AppProperties.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/config/OpenAPIConfig.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/config/PersistenceConfig.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/config/WebConfig.java
+/Users/matheu/proyectosd/AnypostBackend/src/main/java/com/anypost/web/HealthController.java
