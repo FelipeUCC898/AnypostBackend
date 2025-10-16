@@ -1,0 +1,19 @@
+# Build / empaquetados
+/target/
+/out/
+/bin/
+/dist/
+/build/
+*.jar
+*.war
+*.log
+
+# IDE / SO
+*.iml
+.idea/
+.vscode/
+.DS_Store
+
+# Secrets/local
+src/main/resources/config/firebase-admin.json
+uploads/

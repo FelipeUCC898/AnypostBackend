@@ -1,8 +1,26 @@
 spring:
   application:
     name: anypost-backend
-# Perfil por defecto: dev
 spring.profiles.active: dev
 
 server:
   port: 8080
+
+app:
+  cors:
+    allowed-origins:
+      - "http://localhost:3000"
+    allowed-methods: [GET, POST, PUT, PATCH, DELETE, OPTIONS]
+    allowed-headers: ["*"]
+    allow-credentials: true
+    max-age-seconds: 3600
+
+  n8n:
+    webhook-url: "http://localhost:5678/webhook/anypost/submit"
+    api-key: ""  # si tienes API key, ponla aquí
+
+  # Si no usas estas secciones aún, déjalas vacías o elimínalas.
+  security: {}
+  storage: {}
+  firebase:
+    enabled: false

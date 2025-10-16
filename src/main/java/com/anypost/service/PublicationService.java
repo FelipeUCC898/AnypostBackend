@@ -42,21 +42,25 @@ public class PublicationService {
         this.publicationMapper = publicationMapper;
     }
 
-    /** Crea una publicación (sin subir media; eso lo orquesta n8n). */
+    /** 
+     * Crea una publicación (sin subir media; eso lo orquesta n8n).
+     */
     @Transactional
     public PublicationResponse createPublication(User user, CreatePublicationRequest req) {
-        // ✅ Llamada al mapper por campos (evita dependencia del DTO en el impl generado)
-        Publication pub = publicationMapper.fromCreate(
-                req.getTitle(),
-                req.getDescription(),
-                req.getMediaType(),
-                user
-        );
+        // ✅ Crear el DTO localmente para que MapStruct lo reciba correctamente
+        CreatePublicationRequest dto = new CreatePublicationRequest();
+        dto.setTitle(req.getTitle());
+        dto.setDescription(req.getDescription());
+        dto.setMediaType(req.getMediaType());
+
+        Publication pub = publicationMapper.fromCreate(dto, user);
         pub = publicationRepository.save(pub);
         return publicationMapper.toResponse(pub);
     }
 
-    /** Lista publicaciones del usuario. */
+    /** 
+     * Lista publicaciones del usuario.
+     */
     public Page<PublicationResponse> listByUser(UUID userId, Pageable pageable) {
         return publicationRepository.findAllByUser_IdOrderByCreatedAtDesc(userId, pageable)
                 .map(publicationMapper::toResponse);
@@ -71,6 +75,7 @@ public class PublicationService {
         if (req.getPlatforms() == null || req.getPlatforms().isEmpty()) {
             throw new IllegalArgumentException("Debe seleccionar al menos una plataforma");
         }
+
         // Sanitiza duplicados
         var set = EnumSet.noneOf(Platform.class);
         req.getPlatforms().forEach(p -> { if (p != null) set.add(p); });
